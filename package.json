@@ -1,0 +1,31 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "backend app with Insomnia for route testing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carnificis/E-commerce.git"
+  },
+  "keywords": [
+    "Express",
+    "Mysql",
+    "sequelize"
+  ],
+  "author": "Jack Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carnificis/E-commerce/issues"
+  },
+  "homepage": "https://github.com/Carnificis/E-commerce#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.29.0"
+  }
+}
