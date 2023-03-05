@@ -10,6 +10,54 @@ router.get('/', (req, res) => {
 //   // be sure to include its associated Category and Tag data
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+router.delete('/:id', async (req, res) => {
+      const productId = req.params.id;
+    
+      try {
+        const numRowsDeleted = await Product.destroy({
+          where: { id: categoryId }
+        });
+        if (numRowsDeleted === 0) {
+          return res.status(404).json({ error: 'Product not found' });
+        }
+        res.status(204).end();
+      } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Failed to delete product' });
+      }
+    });
+
+
+
+
+
+
+
 // //// assuming Sequelize models are defined in ./models directory
 // db.Product.findAll({
 //   include: [
