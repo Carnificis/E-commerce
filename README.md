@@ -8,3 +8,7 @@ Jack Kelly
 
 #### Repository
 (https://github.com/Carnificis/E-commerce)
+
+
+##### Notes
+I worked in a study group
